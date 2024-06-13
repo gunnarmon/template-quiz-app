@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -22,17 +23,26 @@
               In the Kingdom Heart series who provides the english voice for
               Master Eraqus?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="showAnswerButton"
+            >
               Show answer
             </button>
-            <p class="card__answer">Mark Hamill</p>
+            <p class="card__answer" data-js="cardAnswer">Mark Hamill</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#kingdomheart</li>
               <li class="card__tag-list-item">#mastereraqus</li>
               <li class="card__tag-list-item">#english voices</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmarkButton"
+              >
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +65,11 @@
               Daniel Radcliffe became a global star in the film industry due to
               his performance in which film franchise?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="showAnswerButton"
+            >
               Show answer
             </button>
             <p class="card__answer card__answer--active">Harry Potter</p>
@@ -66,9 +80,10 @@
             </ul>
             <div class="card__button-bookmark">
               <button
-                class="bookmark bookmark--active"
+                class="bookmark"
                 aria-label="bookmark"
                 type="button"
+                data-js="bookmarkButton"
               >
                 <svg
                   class="bookmark__icon"
@@ -102,7 +117,12 @@
               <li class="card__tag-list-item">#teddybear</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmarkButton"
+              >
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +144,7 @@
         <li class="navigation__list-item navigation__list-item--active">
           <a
             class="navigation__link"
-            href="/index.html"
+            href="./index.html"
             aria-label="go to home page"
           >
             <svg
@@ -142,7 +162,7 @@
         <li class="navigation__list-item">
           <a
             class="navigation__link"
-            href="/bookmarks.html"
+            href="./bookmarks.html"
             aria-label="go to bookmarks page"
           >
             <svg
@@ -160,7 +180,35 @@
         <li class="navigation__list-item">
           <a
             class="navigation__link"
-            href="/profile.html"
+            href="./form.html"
+            aria-label="go to add question page"
+          >
+            <svg
+              fill="#000000"
+              height="24px"
+              width="24px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256,0C114.84,0,0,114.842,0,256s114.84,256,256,256s256-114.842,256-256S397.16,0,256,0z M256,462.452
+                 c-113.837,0-206.452-92.614-206.452-206.452S142.163,49.548,256,49.548S462.452,142.163,462.452,256S369.837,462.452,256,462.452z
+                 "
+              />
+              <polygon
+                points="280.774,231.226 280.774,140.387 231.226,140.387 231.226,231.226 140.387,231.226 140.387,280.774 
+                 231.226,280.774 231.226,371.613 280.774,371.613 280.774,280.774 371.613,280.774 371.613,231.226      "
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="./profile.html"
             aria-label="go to profile page"
           >
             <svg

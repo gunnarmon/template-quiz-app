@@ -5,5 +5,6 @@
 @import "./components/card/card.css";
 @import "./components/header/header.css";
 @import "./components/navigation/navigation.css";
+@import "./components/new-question/new-question-form.css";
 @import "./components/profile/profile.css";
 @import "./components/counter-list/counter-list.css";
