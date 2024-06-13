@@ -1,12 +1,12 @@
-const bookmarkButton = document.querySelector('[data-js="bookmarkButton"]');
+const bookmarkButtons = document.querySelectorAll(".bookmark");
+bookmarkButtons.forEach((bookmark) => {
+  bookmark.addEventListener("click", () => {
+    bookmark.classList.toggle("bookmark--active");
+  });
+});
+
 const showAnswerButton = document.querySelector('[data-js="showAnswerButton"]');
 const cardAnswer = document.querySelector('[data-js="cardAnswer"]');
-
-//toggle bookmark icon:
-
-bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("bookmark--active");
-});
 
 //show answer button:
 showAnswerButton.addEventListener("click", () => {
